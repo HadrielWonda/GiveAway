@@ -21,8 +21,8 @@ async function bootstrap() {
   app.use( express.json({verify:(req:any,res,buf)=>{req.rawBody=buf}}));
 
   const config = new DocumentBuilder()
-                    .setTitle("GoFundMe API")
-                    .setDescription("This is the API definition of the Clone of GoFundMe")
+                    .setTitle("GiveAway API")
+                    .setDescription("This is the API definition of the Clone of GiveAway")
                     .setVersion("1.0")
                     .setContact("Oliver Otchere","","Oliverotchere4@gmail.com")
                     .addBearerAuth()
@@ -31,7 +31,7 @@ async function bootstrap() {
 
 
   const option:SwaggerCustomOptions={
-    customSiteTitle:"GoFundMe Docs"
+    customSiteTitle:"GiveAway Docs"
   } 
 
   const document = SwaggerModule.createDocument(app,config)
