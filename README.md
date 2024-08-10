@@ -1,0 +1,2 @@
+# GiveAway
+Donations server
