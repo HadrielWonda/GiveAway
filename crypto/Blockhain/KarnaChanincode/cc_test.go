@@ -68,7 +68,7 @@ func Test(t *testing.T) {
 	// token ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbl9pZCI6Im5nbzEiLCJleHAiOjE1NzkzODY4NjR9.lV7kaiE8JuTrI45VbFylgkh7AxFjfEO6FDA0S5aaroQ"
 	// ccargs = SetupArgsArray("userGateway", token)
 	// response = stub.MockInvoke("f", ccargs)
-	// t.Log(string(response.Message))
+	// t.Log(string(response.Message)) TBC....
 }
 
 func SetupArgsArray(funcName string, args ...string) [][]byte {
