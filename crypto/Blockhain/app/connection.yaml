@@ -1,6 +1,6 @@
-name: "karna~network"
+name: "giveaway~network"
 version: "1.0"
-description: "Karna netwokr connection profile"
+description: "giveaway netwokr connection profile"
 client:
     organization: NGOs
     credentialStore:
@@ -10,7 +10,7 @@ client:
         cryptoStore:
           path: "./credstore/budget/hfc-cvs"
 channels:
-    karnachannel:
+    giveawaychannel:
         orderers:
             - orderer
         peers:

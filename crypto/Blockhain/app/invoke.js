@@ -4,8 +4,8 @@ const {FileSystemWallet,Gateway} = require('fabric-network')
 const CONNECTION_PROFILE_PATH= "./connection.yaml"
 const WALLET_PATH="./wallet"
 const IDENTITY_NAME = "AppClient"
-const CHANNEL_NAME = "karnachannel"
-const CONTRACT_NAME="karna"
+const CHANNEL_NAME = "giveawaychannel"
+const CONTRACT_NAME="giveaway"
 
 async function invoke(){
     try {
@@ -21,8 +21,8 @@ async function invoke(){
         const newtork = await gateway.getNetwork(CHANNEL_NAME)
         const contract = newtork.getContract(CONTRACT_NAME)
         // response = await contract.submitTransaction("setSecret","admin")
-        // response = await contract.submitTransaction("userRegistration","Zzocker","Pritam Singh","pw")
-        response = await contract.evaluateTransaction("userGateway","userLogin","Zzocker","pw")
+        // response = await contract.submitTransaction("userRegistration","Hadrielwonda","Pritam Singh","pw")
+        response = await contract.evaluateTransaction("userGateway","userLogin","Hadrielwonda","pw")
         
         console.log(response.toString())
         // console.log(response.Payload)

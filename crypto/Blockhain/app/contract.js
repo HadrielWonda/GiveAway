@@ -4,8 +4,8 @@ const {FileSystemWallet,Gateway} = require('fabric-network')
 const CONNECTION_PROFILE_PATH= "./connection.yaml"
 const WALLET_PATH="./wallet"
 const IDENTITY_NAME = "AppClient"
-const CHANNEL_NAME = "karnachannel"
-const CONTRACT_NAME="karna"
+const CHANNEL_NAME = "giveawaychannel"
+const CONTRACT_NAME="giveaway"
 
 async function connectNetwork(){
        const ccp = yaml.safeLoad(fs.readFileSync(CONNECTION_PROFILE_PATH))

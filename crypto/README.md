@@ -1,8 +1,8 @@
-# Karna
+# Giveaway
 
 ## Overview
 
-Karna is an Hyperledger fabric-based Decentralised Application that enables charities to collect and track their donations directly on the blockchain. The decentralised nature of blockchain allows users to see all of their donations in one place, as well as a transparent view of how their donations were used.
+Giveaway is an Hyperledger fabric-based Decentralised Application that enables charities to collect and track their donations directly on the blockchain. The decentralised nature of blockchain allows users to see all of their donations in one place, as well as a transparent view of how their donations were used.
 
 ## Features
 
@@ -21,20 +21,20 @@ All the organisations will be able to list out some causes for which they are co
 
 ## Communication
 
-Please join our Karna channel on Discord server at https://discord.gg/7Dykj7d to discuss anything regarding the project.
+Please mail an email to contact us at olawalebash2017@gmail.com
 
 
 ## Install and contribute
 ```Open Git BASH on Windows or Terminal in Linux/MacOS and enter the following: 
-$ git clone https://github.com/dsciitpatna/Project-Karna.git
+$ git clone https://github.com/hadrielwonda/giveaway.git
 ```
 
-* You should Discord server to stay connected with mentors and other contributors.
+* You should send mean email to connect and contribute.
 * Raise an issue before making Pull Requests.
 
 ## Implementation
 
- Karna is implemented on Hyperledger-fabric network **Dnation Network**
+ Giveaway is implemented on Hyperledger-fabric network **Dnation Network**
 **Players of Donation Network**
 
 **Peers :**

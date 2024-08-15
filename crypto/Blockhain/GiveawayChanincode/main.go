@@ -1,23 +1,24 @@
 package main
 
-import "github.com/hyperledger/fabric-chaincode-go/shim"
+import (
+	"fmt"
 
-import "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/hyperledger/fabric-protos-go/peer"
+)
 
-import "fmt"
-
-type KarnaChaincode struct {
+type giveawayChaincode struct {
 }
 
-func (c *KarnaChaincode) Init(stub shim.ChaincodeStubInterface) peer.Response {
+func (c *giveawayChaincode) Init(stub shim.ChaincodeStubInterface) peer.Response {
 	return peer.Response{
 		Status:  200,
 		Message: "successfully initiated",
 		Payload: nil,
 	}
 }
-func (c *KarnaChaincode) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
-	
+func (c *giveawayChaincode) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
+
 	funName, args := stub.GetFunctionAndParameters()
 	if funName == "setSecret" {
 		return putSecret(stub, args)
@@ -50,7 +51,7 @@ func (c *KarnaChaincode) Invoke(stub shim.ChaincodeStubInterface) peer.Response 
 	}
 }
 func main() {
-	err := shim.Start(new(KarnaChaincode))
+	err := shim.Start(new(giveawayChaincode))
 	if err != nil {
 		fmt.Println(err.Error())
 	}

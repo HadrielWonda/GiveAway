@@ -1,6 +1,6 @@
 version: '2'
 networks: 
-    karna:
+    giveaway:
 volumes: 
     data-devpeer:
     data-firstngo:
@@ -19,7 +19,7 @@ services:
             service: peer-base
         container_name: devpeer
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 7051:7051
         depends_on: 
@@ -41,7 +41,7 @@ services:
             service: peer-base
         container_name: firstngo
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 8051:7051
         depends_on: 
@@ -63,7 +63,7 @@ services:
             service: peer-base
         container_name: devvol
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 9051:7051
         depends_on: 
@@ -86,7 +86,7 @@ services:
             file: base.yaml
             service: ca-base
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 7054:7054
         container_name: ngoca
@@ -100,7 +100,7 @@ services:
             file: base.yaml
             service: ca-base
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 9054:7054
         container_name: volunteersca
@@ -117,7 +117,7 @@ services:
             service: orderer-base
         container_name: orderer
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 7050:7050
         environment: 
@@ -134,7 +134,7 @@ services:
             service: couchdb
         container_name: devpeerworld
         networks: 
-            - karna
+            - giveaway
         ports: 
             - 5983:5984
         volumes: 
@@ -145,7 +145,7 @@ services:
             service: couchdb
         container_name: devvolworld
         networks: 
-            - karna
+            - giveaway
         volumes: 
             - data-devvolworld:/opt/couchdb
         ports: 
@@ -156,7 +156,7 @@ services:
             service: couchdb
         container_name: firstngoworld
         networks: 
-            - karna
+            - giveaway
         volumes: 
             - data-firstngoworld:/opt/couchdb
     cli:
@@ -176,6 +176,6 @@ services:
             - ./crypto-config:/crypto-config
             - ./channel-artifacts:/channel-artifacts
             - /var/run/:/host/var/run/
-            - ../KarnaChanincode:/opt/gopath/src/KarnaChanincode
+            - ../giveawayChanincode:/opt/gopath/src/giveawayChanincode
         networks: 
-            - karna
+            - giveaway

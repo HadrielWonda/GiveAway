@@ -125,13 +125,13 @@ Profiles:
         #        - <<: *NGO
         #        - <<: *Volunteers
         Consortiums:
-            KarnaConsortium:
+            giveawayConsortium:
                 Organizations:
                     - <<: *NGO
                     - <<: *Volunteers
-    KarnaChannel:
+    giveawayChannel:
         <<: *ChannelSetup
-        Consortium: KarnaConsortium
+        Consortium: giveawayConsortium
         Application:
             <<: *ApplicationSetup
             Organizations:
