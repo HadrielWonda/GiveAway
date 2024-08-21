@@ -4,7 +4,7 @@ services:
         image: hyperledger/fabric-peer:latest
         environment: 
             - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
-            - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=${COMPOSE_PROJECT_NAME}_giveaway
+            - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=${COMPOSE_PROJECT_NAME}_GIVEAWAY
             - CORE_LOGGING_LEVEL=INFO
             - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
             - CORE_PEER_MSPCONFIGPATH=/peer/msp
