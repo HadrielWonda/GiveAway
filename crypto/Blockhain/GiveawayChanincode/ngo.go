@@ -27,7 +27,7 @@ func ngoGateway(stub shim.ChaincodeStubInterface, args []string) peer.Response {
 		if !is{
 			return shim.Error(err.Error())
 		}
-		//////////////////////////////////////////
+		/////////////////////////////////////////////
 		var ngo NGO
 		json.Unmarshal(bytengo,&ngo)
 		if len(newargs)>0{

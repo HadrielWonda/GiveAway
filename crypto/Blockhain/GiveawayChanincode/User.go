@@ -141,7 +141,7 @@ func userRegistration(stub shim.ChaincodeStubInterface, args []string) peer.Resp
 	return addLogin(stub, args[0], args[2])
 }
 func NGORegistration(stub shim.ChaincodeStubInterface, args []string) peer.Response {
-	// args[0] = loginid,args[1] : name , args[2]=Address , args[3] = Description ,args[4]= password
+	// args[0] = loginid,args[1] : name , args[2]=Address , args[3] = Description ,args[4]= password / 4 is enough for an NGOs login 🥲🥲
 	if len(args) != 5 {
 		return shim.Error("Require 4 arguments")
 	}
