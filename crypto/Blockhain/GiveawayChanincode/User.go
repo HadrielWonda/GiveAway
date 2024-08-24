@@ -95,7 +95,8 @@ func getMission(stub shim.ChaincodeStubInterface, mission_id string) (Mission, e
 	return mission, nil
 }
 func donate(stub shim.ChaincodeStubInterface, user *User, args []string) error {
-	// args[0]=ngo_id,args[1]=mission_name,args[2]=donation
+	// args[0]=ngo_id,args[1]=mission_name,args[2]=donation thoughts ?
+
 	if len(args) != 3 {
 		return fmt.Errorf("require 3 args for donation")
 	}
