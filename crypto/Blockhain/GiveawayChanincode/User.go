@@ -220,3 +220,18 @@ func getUser(stub shim.ChaincodeStubInterface, args []string) peer.Response {
 	}
 	return shim.Success(user)
 }
+
+
+// func deleteUserSecret(stub shim.ChaincodeStubInterface, arg []string) peer.Response  {
+//      if len(args) <= 1 {
+// 		return shim.Error("Need more info to delete")
+// 	 }
+
+// 	 key := delete(stub, "secret", arg)
+// 	 user , is, err := deleteUserSecret(stub, key) 
+// 	  if !is {
+// 		return shim.Error(err.Error())
+// 	  }
+// 	 return shim.Success(user + " deleted successfully")
+
+// }
